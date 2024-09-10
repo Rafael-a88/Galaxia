@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Guia el Viajero Intergaláctico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<h1>La Guía del Viajero Intergaláctico</h1>
+    <div class="instrucciones">Comenzarás tirando los dados dentro de la Galaxia. Si caes en la Galaxia 31 retrocedes a la Galaxia 13, pero si caes en la Galaxia 33, pierdes el juego. El juego finaliza ganando la partida en la Galaxia 42. ¡Buena suerte!</div>
+    <section id="game-board">
+        <div class="board">
+            <div class="row">
+                <div class="celda" data-value="1">1</div>
+                <div class="celda" data-value="2">2</div>
+                <div class="celda" data-value="3">3</div>
+                <div class="celda" data-value="4">4</div>
+                <div class="celda" data-value="5">5</div>
+                <div class="celda" data-value="6">6</div>
+                <div class="celda" data-value="7">7</div>
+            </div>
+            <div class="row">
+                <div class="celda" data-value="8">8</div>
+                <div class="celda" data-value="9">9</div>
+                <div class="celda" data-value="10">10</div>
+                <div class="celda" data-value="11">11</div>
+                <div class="celda" data-value="12">12</div>
+                <div class="celda" data-value="13">13</div>
+                <div class="celda" data-value="14">14</div>
+            </div>
+            <div class="row">
+                <div class="celda" data-value="15">15</div>
+                <div class="celda" data-value="16">16</div>
+                <div class="celda" data-value="17">17</div>
+                <div class="celda" data-value="18">18</div>
+                <div class="celda" data-value="19">19</div>
+                <div class="celda" data-value="20">20</div>
+                <div class="celda" data-value="21">21</div>
+            </div>
+            <div class="row">
+                <div class="celda" data-value="22">22</div>
+                <div class="celda" data-value="23">23</div>
+                <div class="celda" data-value="24">24</div>
+                <div class="celda" data-value="25">25</div>
+                <div class="celda" data-value="26">26</div>
+                <div class="celda" data-value="27">27</div>
+                <div class="celda" data-value="28">28</div>
+            </div>
+            <div class="row">
+                <div class="celda" data-value="29">29</div>
+                <div class="celda" data-value="30">30</div>
+                <div class="celda31" data-value="31">31</div>
+                <div class="celda" data-value="32">32</div>
+                <div class="celda33" data-value="33">33</div>
+                <div class="celda" data-value="34">34</div>
+                <div class="celda" data-value="35">35</div>
+            </div>
+            <div class="row">
+                <div class="celda" data-value="36">36</div>
+                <div class="celda" data-value="37">37</div>
+                <div class="celda" data-value="38">38</div>
+                <div class="celda" data-value="39">39</div>
+                <div class="celda" data-value="40">40</div>
+                <div class="celda" data-value="41">41</div>
+                <div class="celda42" data-value="42">42</div>
+            </div>
+        </div>
+    
+    </section>
+    <div class="miboton">
+        <button id="roll-dice-btn">Lanzar los dados</button><button id="restart">Reiniciar juego</button>
+        <div id="dice-simulation">
+        [ ][ ][ ]
+       
+        </div>
+    </div>
+    <audio id="miAudio" autoplay loop>
+        <source src="Common Fight.ogg" type="audio/ogg">
+    </audio>
+    <audio id="miAudio2" >
+        <source src="gameover.mp3" type="audio/mp3">
+    </audio>
+<footer>
+    <script src="script.js"></script>
+</footer>
+</body>
+</html>
